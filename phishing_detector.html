@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing URL Protector (Demo)</title>
+    <!-- Tailwind CSS CDN - All primary styling is handled by Tailwind classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS for font can be placed here, or linked to an external file -->
+    <style>
+        /* Refer to the CSS Snippet for custom styles like font-family */
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-indigo-200 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-2xl space-y-6 text-center">
+
+        <h1 class="text-4xl font-extrabold text-indigo-800 mb-4">Phishing URL Protector</h1>
+        <p class="text-gray-600 mb-6 text-lg">
+            Enter a URL below to perform a *basic* client-side check for potential phishing indicators.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-6">
+            <input
+                type="text"
+                id="url-input"
+                placeholder="e.g., https://secure-bankk.com/login"
+                class="flex-grow p-3 border-2 border-indigo-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 text-lg"
+            >
+            <button
+                id="check-button"
+                class="px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105 active:scale-95 flex-shrink-0"
+            >
+                Check URL
+            </button>
+        </div>
+
+        <!-- Result Display Area -->
+        <div id="results-container" class="mt-8 p-6 rounded-lg hidden">
+            <h2 class="text-2xl font-bold mb-4 text-left" id="result-title"></h2>
+            <ul class="list-disc list-inside text-left space-y-2 text-lg" id="result-list"></ul>
+        </div>
+
+        <div class="text-sm text-gray-500 mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
+            <strong>Disclaimer:</strong> This is a client-side *demonstration* only. It uses basic checks and a
+            limited, hardcoded set of rules. A real phishing protector requires a constantly updated backend
+            database, advanced heuristic analysis, and often browser integration. Do not rely on this tool
+            for real-world security. Always verify URLs carefully and be suspicious of unexpected requests for personal information.
+        </div>
+
+    </div>
+
+    <!-- JavaScript logic would be linked here or placed in a script tag -->
+    <script>
+        /* Refer to the JavaScript Snippet for the functional logic */
+    </script>
+</body>
+</html>
