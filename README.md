@@ -41,7 +41,7 @@ This project is a single-page application and requires no backend server to run.
 
 Clone the Repository:
 
-git clone https://github.com/your-username/phishing-url-protector.git
+git clone [https://github.com/your-username/phishing-url-protector.git](https://github.com/Eugine1234/Phishing_detector_demo)
 cd phishing-url-protector
 
 (Replace your-username with your actual GitHub username)
